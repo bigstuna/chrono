@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+<head> <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Calcul de Temps de Travail</title> <link rel="stylesheet" href="./css/chrono.css"> 
+</head> 
+<body> 
+    <div class="container"> 
+        <h1>Calcul du Temps de Travail</h1> 
+        <div class="time-input"> 
+                <label for="start">Début du travail :</label> 
+                <input type="time" id="start"> 
+        </div> 
+        <div class="time-input">
+            <label for="end">Fin du travail :</label> 
+            <input type="time" id="end"> 
+        </div> 
+        <button onclick="calculateTime()">Calculer le temps de travail</button> 
+        <div class="result"> 
+            <p id="output">Temps de travail : <span id="workTime">0h 0min</span></p> 
+        </div> 
+    </div> 
+    <script src="./js/chrono.js"></script> 
+</body> 
+</html>
